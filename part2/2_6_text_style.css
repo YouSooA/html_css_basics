@@ -1,0 +1,25 @@
+body {
+  font-size: 22px;
+  line-height: 1.5em;
+  /* px는 font-size값이 변해도 그 간격은 일정 */
+  /* em은 font-size에 따라 상대적으로 비율에 맞게 간격 바꿈 -> 일반적으로 쓰임*/
+}
+h1 {
+  font-weight: lighter;
+  color: red;
+  text-decoration: underline;
+}
+.text {
+  font-weight: bold;
+  font-style: italic;
+  text-align: justify;
+}
+a {
+  /* a태그 밑줄 삭제 */
+  text-decoration: none;
+}
+.copy {
+  text-transform: uppercase;
+  text-align: center;
+}
+/* text-align: justify  양쪽 정렬*/

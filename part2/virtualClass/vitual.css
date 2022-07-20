@@ -1,0 +1,16 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box{
+  height: 300px;
+  width: 300px;
+  border: 1px solid #000;
+  position: relative;
+  /* transition: 0.5s; */
+}
+/* .box:hover{
+  background-color: rgba(153, 205, 50, 0.281);
+} */

@@ -1,0 +1,28 @@
+/* a태그는 body태그의 color속성을 따르지 않음 -> 따로 css의 a태그에서 color속성을 써줘야 함 */
+/* transition 속성은 :hover가 아닌 곳에 넣어줘야 마우스 오버와 빠질 때 모두 적용 */
+.case1 a {
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.case1 a:hover {
+  color: dodgerblue;
+  text-decoration: underline;
+}
+
+.case2 a {
+  color: #000;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  transition: 0.5s;
+}
+.case2 a:hover {
+  background-color: #000;
+  color: #fff;
+}

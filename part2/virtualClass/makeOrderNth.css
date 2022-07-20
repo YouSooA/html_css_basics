@@ -1,0 +1,61 @@
+/* nth-child, nth-of-type */
+/* 순서 가상클래스를 사용하는 목적: 클래스 이름을 주지 않고 요소를 선택하기 위해 */
+/* nth-child는 태그를 구분하지 않음 */
+/* nth-of-type은 태그를  */
+.box {
+  border: 5px solid #000;
+  text-align: center;
+  margin: 50px 0;
+}
+.box div {
+  border: 5px solid #000;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  display: inline-block;
+}
+.box div:nth-of-type(1) {
+  background-color: dodgerblue;
+}
+.box div:nth-of-type(2) {
+  background-color: yellowgreen;
+}
+.box div:nth-of-type(3) {
+  background-color: red;
+}
+.box div:nth-of-type(4) {
+  background-color: blue;
+}
+
+/* first-child, last-child */
+.btn span {
+  background-color: #ddd;
+  display: inline-block;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid black;
+  margin: 0 -3px;
+}
+.btn span:first-child {
+  background-color: #fff;
+  border-bottom: none;
+}
+.btn span:last-child {
+  color: red;
+}
+.tab {
+  border: 1px solid black;
+  margin: -3px;
+}
+.tab a {
+  display: block;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  padding: 5px;
+}
+.tab a:last-child {
+  border-bottom: none;
+}

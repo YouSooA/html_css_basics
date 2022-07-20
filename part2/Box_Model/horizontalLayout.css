@@ -1,0 +1,26 @@
+.box {
+  border: 1px solid red;
+  width: 600px;
+}
+/* div 세로 배치 */
+/* .box div {
+  border: 1px solid blue;
+  width: 200px;
+  height: 200px;
+} */
+
+/* div 가로 배치 */
+/* .box div {
+  border: 1px solid blue;
+  width: 200px;
+  height: 200px;
+  float: left;
+} */
+/* 위의 경우 가로 배치가 안됨 -> width: 200x3 + 1x6 = 606px */
+.box div {
+  border: 1px solid blue;
+  width: 200px;
+  height: 200px;
+  float: left;
+  box-sizing: border-box;
+}

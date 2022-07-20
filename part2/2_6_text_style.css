@@ -1,5 +1,5 @@
 body {
-  font-size: 22px;
+  font-size: 11px;
   line-height: 1.5em;
   /* px는 font-size값이 변해도 그 간격은 일정 */
   /* em은 font-size에 따라 상대적으로 비율에 맞게 간격 바꿈 -> 일반적으로 쓰임*/

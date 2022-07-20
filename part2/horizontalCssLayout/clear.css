@@ -1,0 +1,26 @@
+.parent {
+  border: 5px solid red;
+  width: 600px;
+}
+.top {
+  background-color: purple;
+  height: 50px;
+}
+.left {
+  background-color: dodgerblue;
+  width: 200px;
+  height: 100px;
+  float: left;
+}
+.right {
+  background-color: gold;
+  width: 400px;
+  height: 100px;
+  float: right;
+}
+.bottom {
+  background-color: purple;
+  height: 50px;
+  /* 위에서 float성질을 상속받지 않기 위해 clear */
+  clear: both;
+}

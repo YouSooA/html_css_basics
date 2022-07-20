@@ -1,0 +1,15 @@
+body {
+  color: #000;
+}
+/* inline요소에서 크기 값을 가지고 싶고 세로 배치를 원한다면 -> display: block; */
+a {
+  color: #000;
+  text-decoration: none;
+  border: 1px solid red;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+  width: 200px;
+  margin: 5px;
+  padding: 5px;
+}

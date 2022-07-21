@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loading {
+  /* border: 1px solid red; */
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+.loading span {
+  width: 10px;
+  height: 10px;
+  background-color: crimson;
+  position: absolute;
+  animation: loading 1.5s infinite;
+}
+.loading span:nth-child(1) {}
+.loading span:nth-child(2) {
+  animation-delay: 0.75s;
+}
+@keyframes loading {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: calc(100% - 10px);
+    background-color: dodgerblue;
+  }
+  50% {
+    top: calc(100% - 10px);
+    left: calc(100% - 10px);
+    background-color: yellowgreen;
+  }
+  75% {
+    top: calc(100% - 10px);
+    left: 0;
+    background-color: green;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+/* calc() */
+/* 괄호 안의 식을 계산한 결과를 속성값으로 사용 */
+/* width, height, margin, padding */
+/* +, - 연산자의 경우 앞뒤 공백이 반드시 들어가야함, 나누기 곱하기는 필수는 아니나 앞뒤 공백이 있으면 좋음 */

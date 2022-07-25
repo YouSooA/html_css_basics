@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+    
+    @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+    body {
+      color: #222;
+      background-color: royalblue;
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
+      line-height: 1.5em;
+    }
+    a {
+      color: #222;
+      text-decoration: none;
+    }
+    .menu {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 30px;
+    }
+    .menu a {
+      display: block;
+      font-size: 30px;
+      color: #fff;
+      transition: 0.5s;
+      margin-top: 30px;
+    }
+    .menu:hover a {
+      opacity: 0.3;
+    }
+    .menu a:hover {
+      opacity: 1;
+    }
+    .menu a::before {
+      content: '\f105';
+      font-family: fontawesome;
+      margin-right: 10px;
+      opacity: 0;
+    }
+    .menu a:hover::before {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="menu">
+    <a href="#none">New Arrivals</a>
+    <a href="#none">Summer Collection</a>
+    <a href="#none">Winter Collection</a>
+    <a href="#none">Special Offers</a>
+    <a href="#none">Trends</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    
+    body {
+      color: #222;
+      line-height: 1.5em;
+    }
+    a {
+      color: #222;
+      text-decoration: none;
+    }
+    /* dropdown에서 display: inline-block;을 이용해 content 길이에 따라 길이 조정 */
+    .dropdown {
+      /* display: inline-block; */
+      width: 200px;
+    }
+    .dropdown-btn {
+      width: inherit;
+      padding: 10px;
+      font-size: 18px;
+      background-color: yellowgreen;
+      color: white;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+    .dropdown-submenu {
+      /* a태그를 감싸고 있는 부모요소에 none 설정 */
+      display: none;
+      width:  inherit;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.704);
+    }
+    .dropdown-submenu a {
+      display: block;
+      padding: 7px;
+      text-align: center;
+    }
+    .dropdown-submenu a:hover {
+      background-color: #eee;
+    }
+    /* dropdown에 마우스가 올라가면 dropdown-submenu가 디자인 변경 수행 */
+    /* hover다음에 나오는 요소는 무조건 자식요소여야함 */
+    .dropdown:hover .dropdown-submenu {
+      display: block;
+    } 
+
+  </style>
+
+</head>
+<body>
+  
+  <div class="dropdown">
+    <button class="dropdown-btn">Real Estate Type</button>
+    <div class="dropdown-submenu">
+      <a href="#none">All</a>
+      <a href="#none">One room</a>
+      <a href="#none">1.5 rooms</a>
+      <a href="#none">Two room</a>
+      <a href="#none">Three</a>
+      <a href="#none">Officetel</a>
+      <a href="#none">Apartment</a>
+    </div>
+  </div>
+
+</body>
+</html>

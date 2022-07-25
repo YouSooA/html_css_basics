@@ -1,0 +1,31 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+.sns {
+  background-color: rgb(230, 228, 228);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.177);
+  
+}
+.sns a {
+  display: inline-block;
+  border: 5px solid #fff;
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 80px;
+  font-size: 40px;
+}
+.sns a .fa {}

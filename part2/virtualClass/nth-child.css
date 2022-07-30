@@ -1,3 +1,5 @@
+/* span:nth-child(n) 는 각각 부모 요소를 기준으로 n 번 째에 있는 span 태그를 선택한다
+span:nth-of-type(n) 는 각각 부모 요소를 기준으로 자식 span 태그 중 n 번째 요소를 선택한다 */
 .box {
   height: 500px;
   width: 500px;

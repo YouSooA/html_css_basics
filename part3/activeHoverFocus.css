@@ -1,0 +1,19 @@
+input {
+  display: block;
+  margin-bottom: 10px;
+  transition: 0.5s;
+  outline: none;
+  border: 1px solid lightgray;
+}
+/* input:hover {
+  border: 3px solid #000;
+} */
+/* input:active {
+  border: 3px solid #000;
+} */
+input:focus {
+  border: 3px solid #000;
+}
+input:focus::placeholder {
+  visibility: hidden;
+}

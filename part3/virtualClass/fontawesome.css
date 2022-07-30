@@ -1,0 +1,100 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  line-height: 1.5em;
+}
+.item {
+  /* border: 1px solid red; */
+  width: 300px;
+  margin-bottom: 10px;
+  position: relative;
+}
+/* input은 inline-block */
+.item input[type=text],
+.item input[type=email],
+.item input[type=tel] {
+  border: 1px solid lightgray;
+  height: 40px;
+  width: inherit;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  padding-left: 40px;
+  outline: none;
+  transition: 0.5s;
+}
+/* 위의 경우는 fm 밑의 코드도 가능 */
+/* .item input {} */
+
+.item .fa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: gray;
+  font-size: 24px;
+  /* border: 1px solid red; */
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  transition: 0.5s;
+}
+/* focus는 input에만 사용 */
+.item input:focus {
+  border: 1px solid dodgerblue;
+  box-shadow: 0 0 5px dodgerblue;
+}
+/* input에 명령을 내리고 .fa는 명령을 받음 */
+.item input:focus + .fa {
+  color: dodgerblue;
+}
+.item input:focus::placeholder {
+  visibility: hidden;
+}
+
+.item2 {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.item2 input {
+  border: 1px solid lightgray;
+  width: inherit;
+  height: inherit;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 50px;
+  transition: 0.3s;
+  outline: none;
+}
+.item2 .fa {
+  position: absolute;
+  width: 40px;
+  height: inherit;
+  background-color: gray;
+  color: white;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px 0 0 5px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.item2 input:focus {
+  border: 1px solid dodgerblue;
+  box-shadow: 0 0 5px dodgerblue;
+}
+.item2 input:focus + .fa {
+  background-color: dodgerblue;
+}
+.item2 input:focus::placeholder {
+  visibility: hidden;
+}
+/* placeholder: text인 input요소나 textarea 태그로 만들어진 텍스트 박스에 사용자가 입력하기 전에 해당 텍스트 박스에 들어 있는 간단한 내용 생각 */
